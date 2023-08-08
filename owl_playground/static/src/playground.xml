@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="owl_playground.playground" owl="1">
+        <div class="p-3">
+            hello world
+            <Counter />
+            <br />
+            <Card />
+            <br />
+            <div class="input-group-lg w-100 d-flex border rounded align-items-center">
+            <input type="text" class="form-control-lg flex-fill border-0 me-1" t-on-keyup="addTodo"
+                   placeholder="Enter a new task" aria-label="Enter a new task"
+                   aria-describedby="button-addon2" t-model="state.name"
+                   t-ref="someInput" />
+
+            </div>
+            <br />
+            <TodoList todos="todos" onDelete.bind="removeTodo"  />
+        </div>
+   </t>
+</templates>
