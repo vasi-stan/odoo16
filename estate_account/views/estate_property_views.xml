@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="estate_property_inherit_view_form" model="ir.ui.view">
+        <field name="name">estate.property.inherit.form</field>
+        <field name="model">estate.property</field>
+        <field name="inherit_id" ref="estate.estate_property_view_form"/>
+        <field name="arch" type="xml">
+            <form string="Property">
+                <header>
+                    <xpath expr="//form//header" position="after">
+                    <button name="sold_property" position="after">
+<!--                        <button name="sold_property" states="new,offer_received,offer_accepted" type="object" string="Sold"/>-->
+                    </button>
+                </header>
+
+            </form>
+        </field>
+    </record>
+
+</odoo>

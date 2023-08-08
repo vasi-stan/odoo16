@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="test_menu_root" name="Real Estate" />
+    <menuitem id="test_first_level_menu" name="Advertisements" parent="test_menu_root"/>
+    <menuitem id="test_model_menu_action" action="estate_property_action" parent="test_first_level_menu"/>
+    <menuitem id="test_second_level_menu" name="Settings" parent="test_menu_root"/>
+    <menuitem id="test_model_menu_type_action" action="estate_property_type_action" parent="test_second_level_menu" sequence="3"/>
+    <menuitem id="test_model_menu_tag_action" action="estate_property_tag_action" parent="test_second_level_menu" sequence="2"/>
+</odoo>
