@@ -13,7 +13,7 @@ class EstatePropertyType(models.Model):
     offer_count = fields.Integer(compute='_compute_offer_count', store=True)
 
     @api.model
-    def default_get(self):
+    def default_get(self, fields):
         res = super(EstatePropertyType, self).default_get(fields)
         return res
 
